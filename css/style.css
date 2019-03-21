@@ -321,23 +321,14 @@ li a.active{
 /*contact section*/
 .contact-caption{
 	background: #4a9773;
+	margin: auto;
+  width: 70%;
+  /* border: 3px solid green; */
+  padding: 10px;
 }
 .contact-heading h2{
 	color: #fff;
 	font-size: 90px;
-}
-.contact-info{
-	padding-left: 40px;
-}
-.contact-info h3{
-	padding-left: 0;
-	font-size: 30px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: bold;
-	border-bottom: 1px solid #ffffff;
-	padding-bottom: 12px;
-	margin-bottom: 0;
 }
 .contact-form h3{
 	padding-left: 0;
@@ -348,24 +339,9 @@ li a.active{
 	border-bottom: 1px solid #ffffff;
 	padding-bottom: 12px;
 	margin-bottom: 0;
-}
-.contact-info ul{
-	margin: 0;
-	padding: 0;
-}
-.contact-info ul li{
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	color: #fff;
-}
-.contact-info i.fa{
-	font-size: 16px;
-  	padding-right: 12px;
-  	width: 25px;
-  	height: 38px;
-}
-.contact-info ul li span{
-	font-weight: bold;
+	text-align: center;
+
+
 }
 .contact-form input{
 	width: 100%;
@@ -377,6 +353,7 @@ li a.active{
 	padding: 12px;
 	border:0;
 	margin-bottom: 12px;
+
 }
 .contact-form textarea{
 	font-family: 'Open Sans', sans-serif;
@@ -385,15 +362,15 @@ li a.active{
 	height: 140px;
 	border:0;
 	margin-bottom: 12px;
-}
-.info-detail{
-	border-top: 1px solid #53cde5;
-	padding-top: 15px;
+	
 }
 .form{
-	border-top: 1px solid #53cde5;
+	/* border-top: 1px solid #53cde5; */
 	padding-top: 15px;
-	text-align: left;
+	margin: 0 auto;
+	width: 30em;
+	
+	
 }
 .contact-form input.submit-btn{
 	width: 180px;
@@ -411,6 +388,8 @@ li a.active{
 }
 .contact-form{
 	padding-right: 40px;
+	margin: 0 auto; 
+	width:250px;
 }
 .signup-dropdown{
 	color: #ffffff;
