@@ -1,0 +1,13 @@
+{% extends 'signup/base.html' %}
+
+    {% block content %}
+        <!-- <h1>
+            Sign Up Here
+
+        </h1> -->
+        <h1><a href="{% url 'signup_new' %}" class="top-menu">Sign Up Here</a></h1>
+        
+    
+        
+        <h1><a href="{% url 'all' %}">All Signup responses</a></h1>
+    {% endblock %}

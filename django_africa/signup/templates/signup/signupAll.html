@@ -1,0 +1,14 @@
+{% extends 'signup/base.html' %}
+
+    {% block content %}
+        {% for signup in signups %}
+            <div class="signup-form-results">
+                <p>Name: {{signup.name}}</p>
+                <p>Email: {{signup.email}}</p>
+                <p>Number: {{signup.number}}</p>
+                <p>-------------------------</p>
+            </div>
+        {% endfor %}
+
+        
+    {% endblock %}
