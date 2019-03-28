@@ -16,7 +16,7 @@ def all(request):
 
 def signup_new(request):
     if request.method == "POST":
-        form = PostSignupForm(request.POST)
+        form = PostSignupForm(request.POST, request.FILES)
         if form.is_valid():
             Signup_Form = form.save(commit=False)
             # Signup_Form.name = request.user.name
