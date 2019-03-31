@@ -1,0 +1,9 @@
+{% extends 'services/base.html' %}
+
+    {% block content %} 
+        <h1>Services Here</h1>
+        <h1><a href="{% url 'services_appt_new' %}" class="top-menu">Make an appointment here</a></h1>
+
+        <h1><a href="{% url 'all' %}">All Services Appointment</a></h1>
+
+    {% endblock %}

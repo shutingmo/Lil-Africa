@@ -1,7 +1,7 @@
 from django import forms
 from .models import Signup_Form
 
-class PostSignupForm(forms.ModelForm):
+class Post_Signup_Form(forms.ModelForm):
     criminal = forms.BooleanField(required=False)
     class Meta:
         model = Signup_Form

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Signup_Form
-from .forms import PostSignupForm
+from .forms import Post_Signup_Form
 from django.shortcuts import redirect
 
 # Create your views here.
@@ -16,7 +16,7 @@ def all(request):
 
 def signup_new(request):
     if request.method == "POST":
-        form = PostSignupForm(request.POST, request.FILES)
+        form = Post_Signup_Form(request.POST, request.FILES)
         if form.is_valid():
             Signup_Form = form.save(commit=False)
             # Signup_Form.name = request.user.name
@@ -26,7 +26,7 @@ def signup_new(request):
             Signup_Form.save()
             return redirect('all')
     else:
-        form = PostSignupForm()
+        form = Post_Signup_Form()
     
     
     # return render(request, 'signup/signupNew.html', {'form' : form})
