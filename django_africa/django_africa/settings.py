@@ -38,8 +38,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'signup.apps.SignupConfig',
-    'services.apps.ServicesConfig',
-    'bootstrap_modal_forms',
+    # 'services.apps.ServicesConfig',
+    # 'bootstrap_modal_forms',
 ]
 
 MIDDLEWARE = [
