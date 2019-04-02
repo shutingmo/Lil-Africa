@@ -5,10 +5,10 @@ from .forms import Post_Signup_Form
 from django.shortcuts import redirect
 
 # Create your views here.
-def index(request):
-    # return HttpResponse("You are on the sign in index")
-    # signups = Signup_Form.objects.order_by('name')
-    return render(request, 'signup/homePage.html')
+# def index(request):
+#     # return HttpResponse("You are on the sign in index")
+#     # signups = Signup_Form.objects.order_by('name')
+#     return render(request, 'signup/homePage.html')
 
 def all(request):
     signups = Signup_Form.objects.order_by('name')
@@ -30,7 +30,7 @@ def signup_new(request):
     
     
     # return render(request, 'signup/signupNew.html', {'form' : form})
-    return render(request, 'signup/signupNew.html', {'form' : form})
+    return render(request, 'django_africa/homepage.html', {'form' : form})
 
 
 

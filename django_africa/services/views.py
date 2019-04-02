@@ -19,9 +19,11 @@ def services_appt_new(request):
         if form.is_valid():
             Service_Appt = form.save(commit=False)
             Service_Appt.save()
-            return redirect('all')
+            return redirect('services_all')
     else:
         form = Post_Service_Appt()
     
-    return render(request, 'services/serviceNew.html', {'form' : form})
+    # return render(request, 'services/serviceNew.html', {'form' : form})
+    return render(request, 'django_africa/homePage.html', {'form' : form})
+
 
