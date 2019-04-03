@@ -25,7 +25,43 @@
             <h1><a href="{% url 'homepage' %}" style="color: white;">Lil Africa Home Page</a></h1>
         </div> -->
         
-        <!-- ===================header section -->
+        <header class="top-header">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-5 header-logo">
+                            <br>
+                            <a href="{% url 'homepage' %}"><img src="{% static 'img/logo.png' %}" alt="" class="img-responsive logo"></a>
+                        </div>
+        
+                        <div class="col-md-7">
+                            <nav class="navbar navbar-default">
+                              <div class="container-fluid nav-bar">
+                                <!-- Brand and toggle get grouped for better mobile display -->
+                                <div class="navbar-header">
+                                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                  </button>
+                                </div>
+        
+                                <!-- Collect the nav links, forms, and other content for toggling -->
+                                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                  
+                                  <ul class="nav navbar-nav navbar-right">
+                                    <li><a class="menu active" href="#home" >Home</a></li>
+                                    <li><a class="menu" href="#about">about us</a></li>
+                                    <li><a class="menu" href="#service">our services </a></li>
+                                    <li><a class="menu" href="#contact"> sign up</a></li>
+                                  </ul>
+                                </div><!-- /navbar-collapse -->
+                              </div><!-- / .container-fluid -->
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header> 
        
     
 
@@ -168,9 +204,11 @@
                                     </div>
                         
                                     <h3>
-                                        <button class="btn-service">
+                                        <!-- <button class="btn-service">
                                             Car Wash
-                                        </button>
+                                        </button> -->
+                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Car Wash</button>
+
                                     </h3>
                                     
                                     <!-- <button type = "button">Consulting</button> -->
@@ -185,9 +223,11 @@
                                         </div>
                                     </div>
                                     <h3>
-                                        <button class="btn-service">
+                                        <!-- <button class="btn-service">
                                             Studio
-                                        </button>
+                                        </button> -->
+                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Studio</button>
+
                                     </h3>
                                 </div>
                             </div>
@@ -200,9 +240,11 @@
                                         </div>
                                     </div>
                                     <h3>
-                                        <button class="btn-service">
+                                        <!-- <button class="btn-service">
                                             Convenience Store
-                                        </button>
+                                        </button> -->
+                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Convenience Store</button>
+
                                     </h3>
                                 </div>
                             </div>
@@ -215,9 +257,11 @@
                                         </div>
                                     </div>
                                     <h3>
-                                        <button class="btn-service">
+                                        <!-- <button class="btn-service">
                                             Vending Space
-                                        </button>
+                                        </button> -->
+                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Vending Space</button>
+
                                     </h3>
                                 </div>
                             </div>
@@ -233,7 +277,7 @@
                                         <!-- <button class="btn-service">
                                             Resource Center
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Service Appointment</button>
+                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Resource Center</button>
 
                                     </h3>
                                 </div>
@@ -241,23 +285,54 @@
                         </div>
                     </div>
             </section><!-- end of service section -->
-    
-        <div class="content container">
-                <div class="row">
-                    <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
+
+            <section class="api-map" id="contact">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-md-12 map" id="map"></div>
+                        </div>
                     </div>
-                </div>
-        </div>
+            </section>
+
+            <!-- contact section starts here -->
+			<section class="contact">
+                    <div class="container">
+                        <div class="row">
+                                <div class="contact-caption clearfix">
+                                    <div class="contact-heading text-center">
+                                        <h2>sign up</h2>
+                                    </div>
+    
+                                    <div class="col-md-6 col-md-offset-1 contact-form">
+                                        <h3>Your Information</h3>
+                                        <div class="content container">
+                                                <div class="row">
+                                                    <div class="col-md-8">
+                                                    {% block content %}
+                                                    {% endblock %}
+                                                    </div>
+                                                </div>
+                                        </div>
+                                         
+
+                                    </div>
+    
+                                </div>
+                        </div>
+                    </div>
+            </section>
+            <!-- end of contact section -->
+    
+        
+      
         
         {% block scripts %}
 
-            <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
-            <script src="{% static 'js/popper.min.js' %}"></script>
-            <script src="{% static 'js/bootstrap.min.js' %}"></script>
-            <!-- You can alternatively load the minified version -->
-            <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
+        <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
+        <script src="{% static 'js/popper.min.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <!-- You can alternatively load the minified version -->
+        <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
         {% endblock scripts %}
 
         <!-- {% block extrascripts %}{% endblock extrascripts %} -->

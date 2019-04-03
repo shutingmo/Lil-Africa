@@ -305,7 +305,14 @@ li a.active{
 .service-img img{
 	position: absolute;
 }
-.btn-service{
+/* .btn-service{
+	margin-top: 50px;
+	color: rgb(255, 255, 255);
+	padding: 0;
+	border: none;
+	background: none;
+} */
+.service-appt{
 	margin-top: 50px;
 	color: rgb(255, 255, 255);
 	padding: 0;
