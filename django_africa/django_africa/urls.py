@@ -22,7 +22,8 @@ urlpatterns = [
     # path('', include('signup.urls')),
     path('', views.homepage, name='homepage'),
     # path(r'^signup/', include('signup.urls')),
+    # path('services/', views.servicesView.as_view(), name='services_appt_new')
     # path(r'^services/', include('services.urls')),
-    path('signup/', include('signup.urls')),
+    # path('signup/', include('signup.urls')),
     path('services/', include('services.urls')),
 ]

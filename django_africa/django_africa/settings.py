@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'signup.apps.SignupConfig',
     'services.apps.ServicesConfig',
-    # 'bootstrap_modal_forms',
+    'widget_tweaks',
+    'bootstrap_modal_forms',
 ]
 
 MIDDLEWARE = [
