@@ -18,20 +18,6 @@ def all(request):
     services = Service_Appt.objects.order_by('name')
     return render(request, 'services/servicesApptAll.html', {'services' : services})
 
-# def services_appt_new(request):
-#     if request.method == "POST":
-#         form = Post_Service_Appt(request.POST)
-#         if form.is_valid():
-#             Service_Appt = form.save(commit=False)
-#             Service_Appt.save()
-#             return redirect('services_all')
-#     else:
-#         form = Post_Service_Appt()
-    
-#     # return render(request, 'services/serviceNew.html', {'form' : form})
-#     return render(request, 'django_africa/homePage.html', {'form' : form})
-
-
 class servicesView(BSModalCreateView):
     form_class = CustomUserCreationForm
     # template_name='django_africa/servicesNew.html'

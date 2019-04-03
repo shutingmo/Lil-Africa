@@ -8,55 +8,9 @@
             {{ form.as_p }}
             <button type="submit" class="save btn btn-default">Save</button>
         </form>
-       
-<!-- 
-        {% block extra_js%}
-        <script src="http://malsup.github.com/jquery.form.js"></script>
-        {% endblock %}
-        
-        <p>Click <a data-toggle="modal" data-target="#modal" href="{% url 'services_appt_new' %}">here</a> to show the modal</p>
-        
-        <div class="modal" id="modal"></div> -->
+    {% endblock content%}
 
-
-        <!-- <div class="modal fade" tabindex="-1" role="dialog" id="modal">
-            <div class="modal-dialog" role="document">
-                <div class="modal-content"></div>
-            </div>
-        </div>
-              
-        <button class="service-appt btn btn-primary" data-toggle="modal" type="button" name="button">Sign up</button>
-
-        <button class="btn btn-default" data-toggle="modal" data-target="#settings">
-            hello
-        </button>
-
-        <div id="settings" class="modal fade" role="dialog">
-                <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h3 class="modal-title">Settings</h3>
-                    </div>
-                    <div class="modal-body">
-                        <h4> Tethering</h4>
-                        <label>Name: </label>
-                        <input type="text" id="wlanName" size="15">
-                        <label>Passphrase: </label>
-                        <input type="text" id="passPhrase" size="15">
-                        <br>
-                        <br>
-                        <button type="button" class="btn btn-success" onclick="enableTethering()">Enable tethering</button>
-                        <button type="button" class="btn btn-danger" onclick="disableTethering()">Disable tethering</button>
     
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                    </div>
-                </div>
-                </div>
-             -->
-
     <!-- Trigger the modal with a button -->
     <br>
     <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Service Appointment</button>
@@ -82,18 +36,17 @@
 
     </div>
     </div>
-    {% endblock content%}
 
 
-    {% block extrascripts %}
+
+    <!-- {% block extrascripts %}
 
     <script type="text/javascript">
         $(function () {
           // Sign up button
-          console.log('hello');
           $(".service-appt").modalForm({formURL: "{% url 'services_appt_new' %}"});
       
         });
 
     </script>
-    {% endblock extrascripts %}
+    {% endblock extrascripts %} -->

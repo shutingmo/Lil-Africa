@@ -24,26 +24,3 @@ def homepage(request):
     # return render(request, 'django_africa/homePage.html')
     return _form_view(request)
 
-# def service_appt(request):
-#     return _form_view(request, form_class=Post_Service_Appt, model_class=Service_Appt)
-
-# class servicesView(BSModalCreateView):
-#     form_class=CustomUserCreationForm
-#     template_name='django_africa/servicesNew.html'
-#     success_message = 'Success: Sign up'
-#     success_url = reverse_lazy(homepage)
-
-
-# def services_appt_new(request):
-#     if request.method == "POST":
-#         form = Post_Service_Appt(request.POST)
-#         if form.is_valid():
-#             Service_Appt = form.save(commit=False)
-#             Service_Appt.save()
-#             return redirect('services_all')
-#     else:
-#         form = Post_Service_Appt()
-    
-#     # return render(request, 'services/serviceNew.html', {'form' : form})
-#     return render(request, 'django_africa/homePage.html', {'form' : form})
-
