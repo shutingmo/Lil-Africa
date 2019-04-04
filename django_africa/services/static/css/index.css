@@ -18,3 +18,14 @@ body {
 .content {
     margin-left: 40px;
 }
+.modal-body {
+    background: #084a5c;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}

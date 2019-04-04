@@ -30,7 +30,7 @@
                     <div class="row">
                         <div class="col-xs-5 header-logo">
                             <br>
-                            <a href="{% url 'homepage' %}"><img src="{% static 'img/logo.png' %}" alt="" class="img-responsive logo"></a>
+                            <a href="{% url 'homepage' %}"><img src="{% static 'img/gainesville.jpg' %}" alt="" class="img-responsive logo"></a>
                         </div>
         
                         <div class="col-md-7">
@@ -308,8 +308,11 @@
                                         <div class="content container">
                                                 <div class="row">
                                                     <div class="col-md-8">
-                                                    {% block content %}
-                                                    {% endblock %}
+                                                        <form method="POST" class="post-form">
+                                                            {% csrf_token %}
+                                                            {{ form.as_p }}
+                                                            <button type="submit" class="save btn btn-default">Save</button>
+                                                        </form>
                                                     </div>
                                                 </div>
                                         </div>
@@ -331,8 +334,15 @@
         <script src="{% static 'js/jquery-3.2.1.min.js' %}"></script>
         <script src="{% static 'js/popper.min.js' %}"></script>
         <script src="{% static 'js/bootstrap.min.js' %}"></script>
-        <!-- You can alternatively load the minified version -->
         <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
+
+
+        <!--Can't have the other jquery and bootstrap here or else the modal doesn't show form-->
+        <!-- <script src="{% static 'js/jquery-2.1.1.js' %}"></script> -->
+        <!-- <script src="{% static 'js/smoothscroll.js' %}"></script> -->
+        <!-- <script src="{% static 'js/bootstrap.min.js' %}"></script> -->
+        <!-- <script src="{% static 'js/custom.js' %}"></script> -->
+
         {% endblock scripts %}
 
         <!-- {% block extrascripts %}{% endblock extrascripts %} -->
