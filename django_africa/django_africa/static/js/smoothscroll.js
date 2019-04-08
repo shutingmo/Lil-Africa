@@ -205,7 +205,7 @@ function ssc_overflowingAncestor(e) {
 }
 
 function ssc_addEvent(e, t, n) {
-  window.addEventListener(e, t, n || false)
+  window.addEventListener(e, t, n || false, handle, {passive: true} )
 }
 
 function ssc_removeEvent(e, t, n) {

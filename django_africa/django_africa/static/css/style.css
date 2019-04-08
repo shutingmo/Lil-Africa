@@ -408,26 +408,6 @@ li a.active{
 	font-family: 'Open Sans', sans-serif;
 }
 
-/*gmap*/
-#map{
-	height: 830px;
-}
-.map{
-	position: relative;
-	overflow: hidden;
-}
-.contact{
-	position: absolute;
-	width: 100%;
-	height: 830px;
-	margin-top: 0px;
-	left: 0;
-	margin-top: -830px;
-	background: rgb(255, 255, 255);
-}
-.contact-caption{
-	margin-top: 120px;
-}
 
 /*footer*/
 .footer-para{
@@ -449,7 +429,7 @@ li a.active{
 	padding: 22px 10px;
 }
 .footer a i.fa:hover{
-	color: #42b3e5;
+	color: #a13737;
 }
 
 .carousel-inner{
@@ -568,7 +548,7 @@ responsive area
   	.carousel-caption button {
 		 width: 180px;
 		 height: 50px;
-		 background: #3a9ecb;
+		 background: #a13737;
 		 color: #fff;
 		 font-size: 22px;
 	}
@@ -678,7 +658,7 @@ responsive area
 	}
 	.about h2 {
 	  font-size: 50px;
-	  color: #42b3e5;
+	  color: #a13737;
 	  margin-top: 30px;
 	}
 	.service h2 {
