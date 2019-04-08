@@ -1,0 +1,31 @@
+p, h1 {
+    color: #C25100;
+    font-family: 'Open Sans';
+}
+body {
+    padding-left: 15px;
+    font-family: 'BenchNine';
+}
+.page-header{
+    background-color: #C25100;
+    color: white;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
+.page-header a{
+    color: white;
+}
+.content {
+    margin-left: 40px;
+}
+.modal-body {
+    background: #084a5c;
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    bottom: 0;
+    left: 0;
+    z-index: 10040;
+    overflow: auto;
+    overflow-y: auto;
+}

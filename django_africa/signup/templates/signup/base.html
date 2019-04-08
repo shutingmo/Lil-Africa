@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+    <head>
+        <title>Lil Africa Home Page</title>
+       
+        <link rel="stylesheet" href="{% static 'css/index.css' %}">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:600italic,400,800,700,300' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=BenchNine:300,400,700' rel='stylesheet' type='text/css'>
+        
+        <!-- <script src="{% static 'assets/js/bootstrap.js' %}"></script>
+        <script src="{% static 'assets/js/jquery.js' %}"></script>
+        <script src="{% static 'js/jquery.bootstrap.modal.forms.js' %}"></script>
+         -->
+    </head>
+    <body>
+    
+        <div class="page-header">
+            <h1><a href="{% url 'homepage' %}" style="color: white;">Lil Africa Home Page</a></h1>
+        </div>
+        
+        <div class="content container">
+                <div class="row">
+                    <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                    </div>
+                </div>
+        </div>
+        
+    </body>
+</html>
