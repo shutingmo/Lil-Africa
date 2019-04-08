@@ -124,8 +124,12 @@
             </section><!-- end of slider section -->
 
 
+            
             <!-- about section -->
 			<section class="about text-center" id="about">
+                    <br>
+                    <br>
+                    
                     <div class="container">
                         <div class="row">
                             <h2>about us</h2>
@@ -187,9 +191,11 @@
                     </div>
             </section><!-- end of about section -->
 
+           
             <!-- service section starts here -->
-
 			<section class="service text-center" id="service">
+                    <br>
+                    <br>
                     <div class="container-fluid">
                         <div class="row">
                             <h2>our services</h2>
@@ -207,7 +213,9 @@
                                         <!-- <button class="btn-service">
                                             Car Wash
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Car Wash</button>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="service-appt btn btn-lg" data-toggle="modal" data-target="#myModal">Car Wash</button>
 
                                     </h3>
                                     
@@ -226,7 +234,9 @@
                                         <!-- <button class="btn-service">
                                             Studio
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Studio</button>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="service-appt btn btn-lg" data-toggle="modal" data-target="#myModal">Studio</button>
 
                                     </h3>
                                 </div>
@@ -243,7 +253,9 @@
                                         <!-- <button class="btn-service">
                                             Convenience Store
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Convenience Store</button>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="service-appt btn btn-lg" data-toggle="modal" data-target="#myModal">Convenience Store</button>
 
                                     </h3>
                                 </div>
@@ -260,7 +272,9 @@
                                         <!-- <button class="btn-service">
                                             Vending Space
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Vending Space</button>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="service-appt btn btn-lg" data-toggle="modal" data-target="#myModal">Vending Space</button>
 
                                     </h3>
                                 </div>
@@ -277,7 +291,9 @@
                                         <!-- <button class="btn-service">
                                             Resource Center
                                         </button> -->
-                                        <button type="button" class="service-appt btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Resource Center</button>
+                                        <br>
+                                        <br>
+                                        <button type="button" class="service-appt btn btn-lg" data-toggle="modal" data-target="#myModal">Resource Center</button>
 
                                     </h3>
                                 </div>
@@ -305,13 +321,15 @@
     
                                     <div class="col-md-6 col-md-offset-1 contact-form">
                                         <h3>Your Information</h3>
+                                        <br>
                                         <div class="content container">
                                                 <div class="row">
                                                     <div class="col-md-8">
                                                         <form method="POST" class="post-form">
                                                             {% csrf_token %}
                                                             {{ form.as_p }}
-                                                            <button type="submit" class="save btn btn-default">Save</button>
+                                                            <br>
+                                                            <button type="submit" class="save btn btn-default btn-lg">Save</button>
                                                         </form>
                                                     </div>
                                                 </div>
@@ -339,20 +357,26 @@
 
         <!--Can't have the other jquery and bootstrap here or else the modal doesn't show form-->
         <!-- <script src="{% static 'js/jquery-2.1.1.js' %}"></script> -->
-        <!-- <script src="{% static 'js/smoothscroll.js' %}"></script> -->
+        <script src="{% static 'js/smoothscroll.js' %}"></script>
         <!-- <script src="{% static 'js/bootstrap.min.js' %}"></script> -->
-        <!-- <script src="{% static 'js/custom.js' %}"></script> -->
+        <script src="{% static 'js/custom.js' %}"></script>
 
         {% endblock scripts %}
 
         <!-- {% block extrascripts %}{% endblock extrascripts %} -->
         <!-- Modal -->
       
-
+        
         <div id="myModal" class="modal fade" role="dialog">
             <div class="modal-dialog">
         
                 <!-- Modal content-->
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
                 <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -372,7 +396,6 @@
 
         <script type="text/javascript">
             $(function () {
-            // Sign up button
             $(".service-appt").modalForm({formURL: "{% url 'services_appt_new' %}"});
         
             });

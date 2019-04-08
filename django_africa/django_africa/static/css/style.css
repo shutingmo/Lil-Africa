@@ -13,18 +13,13 @@ h1, h2{
 	text-transform: uppercase;
 	font-weight: bold;
 }
-
-/*
-.modal-dialog{
-	position: absolute;
-	left: 50%;
-	margin-left: -312px;
-	height: 500px;
-	top: 50%;
-	margin-top: -250px;
-} 
-*/
-
+.service-appt{
+	color: rgb(41, 40, 40);
+}
+.post-form{
+	color: rgb(0, 0, 0);
+	font-size: 18px;
+}
 /*header area*/
 .top-header{
 	background: #fff !important;
@@ -39,9 +34,9 @@ h1, h2{
 	margin:auto;
 }
 .top-header img.logo{
-	width: 10%;
-  height: auto;
-	margin-bottom: 0px;
+	width: 20%;
+	height: auto;
+	margin-bottom: 15px;
 	margin-top: 0;
 	transition:all .5s ease 0s;
   -webkit-transition:all .5s ease 0s;
@@ -53,7 +48,7 @@ h1, h2{
   background-color: transparent;
   border-color: transparent;
   margin-bottom: 0;
-  margin-top: 0px;
+  margin-top: 0;
   transition:all .5s ease 0s;
   -webkit-transition:all .5s ease 0s;
   -moz-transition:all .5s ease 0s;
@@ -272,12 +267,12 @@ li a.active{
 	/* background: url(../img/green_back.jpg); */
 	background: #4a9773;
 	background-repeat: repeat-y;
-	margin-top: 40px;
+	margin-top: 70px;
 }
 .service h2{
 	font-size: 90px;
 	color: #fff;
-	margin-top: 70px;
+	margin-top: 50px;
 	margin-bottom: 0;
 }
 .service h4{
@@ -315,14 +310,7 @@ li a.active{
 .service-img img{
 	position: absolute;
 }
-/* .btn-service{
-	margin-top: 50px;
-	color: rgb(255, 255, 255);
-	padding: 0;
-	border: none;
-	background: none;
-} */
-.service-appt{
+.btn-service{
 	margin-top: 50px;
 	color: rgb(255, 255, 255);
 	padding: 0;
